@@ -17,16 +17,16 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="#service">Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -34,7 +34,7 @@
           </nav>
 
     <!---carousal-->
-    <div id="carouselExampleCaptions" class="carousel slide">
+    <div id="carouselExampleCaptions" class="carousel slide" id="home">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -74,7 +74,7 @@
       </div>
 
     <!--about-->
-    <div class="container-fluid">
+    <div class="container-fluid" id="about">
         <div class="row pt-5 pb-5 text-center">
             <h1 class="display-6">About Us</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -106,7 +106,7 @@
     </div>
 
     <!---Services-->
-    <div class="container-fluid mt-5 mb-5">
+    <div class="container-fluid mt-5 mb-5" id="service">
       <div class="row">
         <h1 class="display-6 text-center">Our Services</h1>
       </div>
@@ -130,6 +130,39 @@
           <h5>Cloud</h5>
           <div class="progress mt-3 mb-3" role="progressbar" aria-label="Dark example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
             <div class="progress-bar bg-dark" style="width: 80%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---Contact-->
+    <div class="container-fluid mt-5 mb-5">
+      <div class="row">
+        <h1 class="display-6 text-center">Contact Us</h1>
+      </div>
+      <div class="row justify-content-evenly pt-5">
+        <div class="col-md-5">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15607.895988105523!2d75.53986204947512!3d12.045310048968538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba437e49fdccd57%3A0x3924debd572fa4a!2z4LS24LWN4LSw4LWAIOC0muC1i-C0qOC1jeC0qOC0ruC1jeC0riDgtK3gtJfgtLXgtKTgtL8g4LSV4LWL4LSf4LWN4LSf4LSCLOC0juC0suC1jeC0suC0vuC0sOC0v-C1u-C0ueC0vw!5e0!3m2!1sml!2sin!4v1673629375234!5m2!1sml!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-5">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your email">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Phone</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your phone">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <button class="btn btn-outline-secondary" type="button">Submit</button>
           </div>
         </div>
       </div>
